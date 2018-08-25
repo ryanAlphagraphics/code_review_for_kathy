@@ -6,6 +6,7 @@ GGC Smart Contract Code Suggetions
 
 Constant Functions
 ------------
+source code::
     function totalSupply() public constant returns (uint);
 
 The function is declared as constant. Currently, for functions the constant modifier is a synonym for view (which is the preferred option). Consider using view for funcitons and constant for state variables.
