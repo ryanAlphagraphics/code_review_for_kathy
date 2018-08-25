@@ -77,6 +77,6 @@ Any interaction from a contract (A) with another contract (B) and any transfer o
 
 This pattern is experimental and can report false issues. This pattern might also be triggered when
 
-* `accessing struct's field`_
-* `using enum's element`_
+* accessing struct's field
+* using enum's element
 
