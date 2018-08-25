@@ -124,14 +124,14 @@ Do not declare functions that change the state as view.
 
 The following statements are considered modifying the state::
 
-* Writing to state variables;
-* Emitting events;
-* Creating other contracts;
-* Using selfdestruct;
-* Sending Ether via calls;
-* Calling any function not marked view or pure;
-* Using low-level calls;
-* Using inline assembly that contains certain opcodes.
+* Writing to state variables
+* Emitting events
+* Creating other contracts
+* Using selfdestruct
+* Sending Ether via calls
+* Calling any function not marked view or pure
+* Using low-level calls
+* Using inline assembly that contains certain opcodes
 
 `Solidity: View Functions <https://solidity.readthedocs.io/en/develop/contracts.html#view-functions>`_
 
