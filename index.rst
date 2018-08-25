@@ -122,7 +122,7 @@ Currently, the compiler does not verify this. In order to avoid problems related
 
 Do not declare functions that change the state as view.
 
-The following statements are considered modifying the state::
+The following statements are considered modifying the state
 
 * Writing to state variables
 * Emitting events
