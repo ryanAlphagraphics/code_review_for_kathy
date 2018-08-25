@@ -136,3 +136,12 @@ The following statements are considered modifying the state
 `Solidity: View Functions <https://solidity.readthedocs.io/en/develop/contracts.html#view-functions>`_
 
 
+Implicit visibility level
+------------
+source code::
+
+    PoolTrans[] outputGGETrans;
+
+
+The default function visibility level in Solidity is public. Explicitly define function visibility to prevent confusion.
+
