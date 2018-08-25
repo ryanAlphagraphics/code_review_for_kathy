@@ -56,8 +56,8 @@ Compiler version not fixed
 ------------
 source code::
 
-    pragma solidity ^0.4.24; // not that good: compiles w 0.4.124 and above
-    pragma solidity 0.4.24; // good : compiles w 0.4.124 only
+    pragma solidity ^0.4.24; // not that good: compiles w 0.4.24 and above
+    pragma solidity 0.4.24; // good : compiles w 0.4.24 only
 
 
 Solidity source files indicate the versions of the compiler they can be compiled with.
