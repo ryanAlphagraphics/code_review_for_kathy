@@ -1,27 +1,15 @@
 GGC Smart Contract Code Suggetions
 ====================
 
-Bootstrap-datepicker provides a flexible datepicker widget in the Bootstrap style.
-
-.. figure:: _static/screenshots/demo_head.png
-    :align: center
-
-Versions are incremented according to `semver <http://semver.org/>`_.
-
-`Online Demo <https://eternicode.github.io/bootstrap-datepicker/>`_
 
 
-Requirements
+
+Constant Functions
 ------------
 
-* `Bootstrap`_ 2.0.4+
-* `jQuery`_ 1.7.1+
+The function is declared as constant. Currently, for functions the constant modifier is a synonym for view (which is the preferred option). Consider using view for funcitons and constant for state variables.
 
-.. _Bootstrap: https://getbootstrap.com/
-.. _jQuery: https://jquery.com/
-
-These are the specific versions bootstrap-datepicker is tested against (``js`` files) and built against (``css`` files).  Use other versions at your own risk.
-
+.. _View and constant function in Solidity: https://github.com/ethereum/solidity/issues/992
 
 Dependencies
 ------------
