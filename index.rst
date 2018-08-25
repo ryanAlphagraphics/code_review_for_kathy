@@ -9,7 +9,7 @@ Constant Functions
 
 The function is declared as constant. Currently, for functions the constant modifier is a synonym for view (which is the preferred option). Consider using view for funcitons and constant for state variables.
 
-.. _View and constant function in Solidity: https://github.com/ethereum/solidity/issues/992
+`View and constant function in Solidity <https://github.com/ethereum/solidity/issues/992>`_
 
 Dependencies
 ------------
