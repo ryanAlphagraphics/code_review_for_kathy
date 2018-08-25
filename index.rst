@@ -1,4 +1,4 @@
-bootstrap-datepicker
+GGC Smart Contract Code Suggetions
 ====================
 
 Bootstrap-datepicker provides a flexible datepicker widget in the Bootstrap style.
