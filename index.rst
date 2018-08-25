@@ -15,6 +15,8 @@ The function is declared as constant. Currently, for functions the constant modi
 `View and constant functions in Solidity <https://github.com/ethereum/solidity/issues/992>`_
 
 
+
+
 Using the approve function of the ERC-20 standard
 ------------
 source code::
