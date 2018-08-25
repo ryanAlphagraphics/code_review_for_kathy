@@ -80,3 +80,59 @@ This pattern is experimental and can report false issues. This pattern might als
 * accessing struct's field
 * using enum's element
 
+
+Timestamp dependence
+------------
+source code::
+
+    ggcPoolTransFalse.push(PoolTrans(_value, uint64(now)));
+
+
+The timestamp of the block can be slightly manipulated by the miner. One should not use timestamp's exact value for critical components of the contract.
+
+Block numbers and average block time can be used to estimate time, but this is not future proof as block times may change (such as the changes expected during Casper). Do not use "now" for randomness.
+
+`Solidity: Timestamp Dependence <https://github.com/ethereum/wiki/wiki/Safety#timestamp-dependence>`_
+
+
+Unchecked math
+------------
+source code::
+
+    adminsGroup.length -= 1;
+
+
+Solidity is prone to integer over- and underflow. Overflow leads to unexpected effects and can lead to loss of funds if exploited by a malicious account.
+
+Check against over- and underflow (use the SafeMath library).
+
+`Is it possible to overflow uints? <https://ethereum.stackexchange.com/questions/7293/is-it-possible-to-overflow-uints>`_
+
+
+The incompleteness of the compiler: view-function
+------------
+source code::
+
+    function isContract(address _addr) internal view returns (bool)
+
+
+In Solidity, functions that do not read from the state or modify it can be declared as view.
+
+Currently, the compiler does not verify this. In order to avoid problems related to the compiler's improvement, you should correctly indicate whether the function is view or not.
+
+Do not declare functions that change the state as view.
+
+The following statements are considered modifying the state::
+
+* Writing to state variables;
+* Emitting events;
+* Creating other contracts;
+* Using selfdestruct;
+* Sending Ether via calls;
+* Calling any function not marked view or pure;
+* Using low-level calls;
+* Using inline assembly that contains certain opcodes.
+
+`Solidity: View Functions <https://solidity.readthedocs.io/en/develop/contracts.html#view-functions>`_
+
+
