@@ -8,9 +8,6 @@ Constant Functions
 ------------
     function totalSupply() public constant returns (uint);
 
-
-    function totalSupply() public constant returns (uint);
-
 The function is declared as constant. Currently, for functions the constant modifier is a synonym for view (which is the preferred option). Consider using view for funcitons and constant for state variables.
 
 `View and constant functions in Solidity <https://github.com/ethereum/solidity/issues/992>`_
