@@ -6,6 +6,8 @@ GGC Smart Contract Code Suggetions
 
 Constant Functions
 ------------
+    function totalSupply() public constant returns (uint);
+
 
     function totalSupply() public constant returns (uint);
 
